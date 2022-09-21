@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Máy tính thông minh</title>
+    <style>
+      .title {
+        text-align: center;
+        color: red;
+      }
+      label {
+        font-size: 1rem;
+        color: blue;
+      }
+      #btn {
+        text-align: center;
+        color: #fff;
+        background-color: green;
+      }
+      @media screen and (max-width: 375px) {
+        label {
+          font-size: 1.5rem;
+        }
+        #ageInput {
+          display: block;
+          width: 90%;
+          margin: 0 auto;
+          font-size: 1.5rem;
+        }
+        #btn {
+          display: block;
+          margin: 0 auto;
+          font-size: 0.8rem;
+        }
+        .show {
+          background-color: lightgreen;
+          text-align: center;
+          color: #fff;
+          padding: 5px 0;
+        }
+      }
+    </style>
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <h1 class="title">Máy tính thông minh</h1>
+    <label for="ageInput">Mời nhập tuổi của bạn</label><br />
+    <input type="text" id="ageInput" placeholder="Nhập đi nào" /><br />
+    <button type="button" id="btn">Tính tuổi</button>
+    <p class="result"></p>
+  </body>
+</html>
